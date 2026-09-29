@@ -15,14 +15,14 @@ This project presents a fully normalized relational database schema designed for
 
 The schema consists of 8 interconnected tables designed to ensure data integrity and query efficiency:
 
-1. `users` — Stores customer profile data.
-2. `addresses` — Handles multiple shipping addresses per user (**1:N** relationship).
-3. `categories` — Classifies products into distinct hierarchical groups.
-4. `products` — Stores inventory details, pricing, and stock levels (**1:N** with categories).
-5. `orders` — Tracks order metadata, current status, and total values (**1:N** with users).
-6. `order_items` — Junction table resolving the **M:N** relationship between orders and products.
-7. `payments` — Enforces transaction tracking with a strict **1:1** relationship to orders.
-8. `reviews` — Contains product reviews and ratings (**M:N** junction between users and products with a unique constraint preventing duplicate reviews).
+* `users` — Stores customer profile data.
+* `addresses` — Handles multiple shipping addresses per user (**1:N** relationship).
+* `categories` — Classifies products into distinct hierarchical groups.
+* `products` — Stores inventory details, pricing, and stock levels (**1:N** with categories).
+* `orders` — Tracks order metadata, current status, and total values (**1:N** with users).
+* `order_items` — Junction table resolving the **M:N** relationship between orders and products.
+* `payments` — Enforces transaction tracking with a strict **1:1** relationship to orders.
+* `reviews` — Contains product reviews and ratings (**M:N** junction between users and products with a unique constraint preventing duplicate reviews).
 
 ---
 
@@ -63,13 +63,15 @@ To eliminate redundancy and prevent insertion, update, and deletion anomalies, t
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/chivasebastian/ecommerce-relational-db-design.git](https://github.com/chivasebastian/ecommerce-relational-db-design.git)
+   git clone https://github.com/chivasebastian/ecommerce-relational-db-design.git
    cd ecommerce-relational-db-design
    ```
+
 2. Run the schema script:
    ```bash
    psql -U chivasebastian -d ecommerce_db -f schema.sql
    ```
+
 3. Populate mock data:
    ```bash
    psql -U chivasebastian -d ecommerce_db -f data_insertion.sql
