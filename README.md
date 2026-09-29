@@ -69,10 +69,10 @@ To eliminate redundancy and prevent insertion, update, and deletion anomalies, t
 
 2. Run the schema script:
    ```bash
-   psql -U chivasebastian -d ecommerce_db -f schema.sql
+   psql -U <your_username> -d <your_database> -f schema.sql
    ```
 
 3. Populate mock data:
    ```bash
-   psql -U chivasebastian -d ecommerce_db -f data_insertion.sql
+   psql -U <your_username> -d <your_database> -f data_insertion.sql
    ```
