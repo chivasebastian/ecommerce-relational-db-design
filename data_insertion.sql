@@ -22,9 +22,9 @@ INSERT INTO addresses (user_id, street_address, city, county, postal_code, is_de
 (1, 'Str. Victoriei Nr. 12', 'Bucharest', 'Ilfov', '010071', TRUE),
 (1, 'Bvd. Unirii Nr. 45', 'Bucharest', 'Ilfov', '030167', FALSE),
 (2, 'Str. Republicii Nr. 5', 'Cluj-Napoca', 'Cluj', '400015', TRUE),
-(3, 'Str. Ştefan cel Mare Nr. 88', 'Iași', 'Iași', '700063', TRUE),
-(4, 'Str. Revoluției Nr. 10', 'Timișoara', 'Timiș', '300080', TRUE),
-(5, 'Str. Transilvaniei Nr. 3', 'Brașov', 'Brașov', '500007', TRUE);
+(3, 'Str. Ştefan cel Mare Nr. 88', 'Iasi', 'Iasi', '700063', TRUE),
+(4, 'Str. Revolutiei Nr. 10', 'Timisoara', 'Timis', '300080', TRUE),
+(5, 'Str. Transilvaniei Nr. 3', 'Brasov', 'Brasov', '500007', TRUE);
 
 -- 4. Insert Products
 INSERT INTO products (category_id, product_name, sku, price, stock_quantity) VALUES
@@ -64,7 +64,7 @@ INSERT INTO payments (order_id, payment_method, payment_status, amount) VALUES
 
 -- 8. Insert Reviews
 INSERT INTO reviews (product_id, user_id, rating, comment) VALUES
-(1, 1, 5, 'Excelent telefon, bateria ține peste o zi!'),
-(2, 2, 4, 'Raport calitate-preț foarte bun pentru lucru.'),
+(1, 1, 5, 'Excelent telefon, bateria tine peste o zi!'),
+(2, 2, 4, 'Raport calitate-pret foarte bun pentru lucru.'),
 (4, 1, 5, 'Viteze excelente de citire/scriere.'),
-(7, 5, 5, 'Culori superbe și rată de refresh excelentă.');
+(7, 5, 5, 'Culori superbe si rata de refresh excelenta.');
