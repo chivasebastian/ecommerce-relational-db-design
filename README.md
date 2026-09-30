@@ -116,6 +116,7 @@ If you are already connected to your PostgreSQL server via psql:
 
 SQL
 \c ecommerce_db
+
 2. Execute the scripts in order:
 
 SQL
