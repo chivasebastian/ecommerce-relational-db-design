@@ -95,5 +95,5 @@ If you are already connected to your PostgreSQL server via `psql`:
 \c <your_database>
 
 2. Execute the scripts in order:
-\i `schema.sql`
-\i `data_insertion.sql`
+\i schema.sql
+\i data_insertion.sql
