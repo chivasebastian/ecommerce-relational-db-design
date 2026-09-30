@@ -86,3 +86,14 @@ To eliminate redundancy and prevent insertion, update, and deletion anomalies, t
 3. Copy and run schema.sql to build the tables and constraints.
 
 4. Copy and run data_insertion.sql to populate initial test data.
+
+### Option 3: From inside the `psql` interactive terminal
+If you are already connected to your PostgreSQL server via `psql`:
+
+1. Connect to your target database:
+```sql
+\c <your_database>
+
+2. Execute the scripts in order:
+\i schema.sql
+\i data_insertion.sql
