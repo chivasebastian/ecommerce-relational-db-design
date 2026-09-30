@@ -76,3 +76,13 @@ To eliminate redundancy and prevent insertion, update, and deletion anomalies, t
    ```bash
    psql -U <your_username> -d <your_database> -f data_insertion.sql
    ```
+
+ Option 2: Via GUI (pgAdmin / DBeaver)
+
+1. Create a new database in your SQL client (e.g., ecommerce_db).
+
+2. Open a Query Window inside that database.
+
+3. Copy and run schema.sql to build the tables and constraints.
+
+4. Copy and run data_insertion.sql to populate initial test data.
